@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+header .header-content {
+    background: #111e6c;
+    height: 70px;
+    width: 100%;
+    padding: 0 8%;
+    position: top;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 45%;
+    position: relative;
+    top: -6px;
+}
+
+.right-nav {
+    padding: 20px 0;
+}
+
+.right-nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.right-nav li a {
+    font-size: larger;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0;
+    position: relative;
+    font-family: 'Alegreya Sans', sans-serif !important;
+}
+
+.right-nav li a::after {
+    content: '';
+    background: #dde8f3;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.right-nav li a:hover::after {
+    width: 100%;
+}
+
+body {
+    /* display: flex; */
+    display: inline;
+    padding: 0 0;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #dde8f3;
+    padding-bottom: 20px;
+}
+
+.wrapper {
+    width: 720px;
+    background: #dde8f3;
+    border-radius: 5px;
+    margin: 0 auto;
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper header {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px 30px;
+    border-bottom: 1px solid #bfbfbf;
+    margin-top: 10px;
+}
+
+.wrapper form {
+    margin: 35px 30px;
+}
+
+form .dbl-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+
+.dbl-field .field {
+    height: 50px;
+    position: relative;
+    width: calc(100% / 2 - 13px);
+}
+
+form .field input,
+form .message textarea {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 18px 0 48px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+}
+
+form .field input::placeholder,
+form .message textarea::placeholder {
+    color: #bfbfbf;
+}
+
+form .field input:focus,
+form .message textarea:focus {
+    border: 2px solid #111e6c;
+}
+
+.wrapper form i {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: #bfbfbf;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+form .field input:focus~i,
+form .message textarea:focus~i {
+    color: #111e6c;
+}
+
+form .message {
+    position: relative;
+}
+
+form .message i {
+    top: 30px;
+    font-size: 22px;
+}
+
+form .message textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 120px;
+    max-height: 300px;
+    min-height: 120px;
+    padding: 15px 20px 0 48px;
+}
+
+form .button-area {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.button-area button {
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #111e6c;
+    padding: 13px 25px;
+}
+
+.button-area #error {
+    color: #111e6c;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+footer {
+    clear: both;
+    background: #111e6c;
+    margin-top: 36px;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-family: 'Alegreya Sans', sans-serif !important;
+}
+
+/* Media query for header */
+@media only screen and (max-width:768px) {
+
+    header .header-content {
+        height: auto;
+        width: 100%;
+    }
+
+    .logo-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        height: 60px;
+        height: 60px;
+    }
+
+    .header-content {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* Media query for the body */
+    @media(max-width: 600px) {
+
+        .wrapper {
+            width: fit-content;
+        }
+
+        .wrapper header {
+            text-align: center;
+        }
+
+        form .dbl-field {
+            margin-bottom: 0px;
+            flex-direction: column;
+        }
+
+        .dbl-field .field {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        form .message textarea {
+            resize: none;
+        }
+
+        form .button-area {
+            flex-direction: column;
+        }
+
+        .button-area button {
+            width: 100%;
+        }
+
+        .button-area #error {
+            text-align: center;
+            margin: 20px 0;
+        }
+    }
+
+}

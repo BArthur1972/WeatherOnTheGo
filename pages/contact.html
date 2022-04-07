@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/contact.css">
+    <!-- Links for Icons and Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap');
+    </style>
+    <title>Contact Us</title>
+</head>
+<header>
+    <div class="header-content">
+        <nav>
+            <div class="logo-section">
+                <img src="/images/logo.png" class="logo">
+            </div>
+            <ul class="right-nav">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="suggestions.html">Suggestions</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <div class="wrapper">
+        <header>Send us a Message</header>
+        <form action="https://formsubmit.co/eketsri78@bethelu.edu" method="POST" onsubmit="return validation()">
+            <div class="dbl-field">
+                <div class="field">
+                    <input type="text" id="name" name="name" placeholder="Enter your name ">
+                    <i class="fas fa-user "></i>
+                </div>
+                <div class="field ">
+                    <input type="text " id="email " name="email " placeholder="Enter your email ">
+                    <i class="fas fa-envelope "></i>
+                </div>
+            </div>
+            <div class="dbl-field ">
+                <div class="field ">
+                    <input type="text " id="phone " name="phone " placeholder="Enter your phone ">
+                    <i class="fas fa-phone-alt "></i>
+                </div>
+                <div class="field ">
+                    <input type="text " id="website " name="website " placeholder="Enter your website ">
+                    <i class="fas fa-globe "></i>
+                </div>
+            </div>
+            <div class="message ">
+                <textarea placeholder="Write your message " id="message " name="message "></textarea>
+                <i class="material-icons ">message</i>
+            </div>
+            <div class="button-area ">
+                <button type="submit ">Send Message</button>
+                <span id="error "></span>
+            </div>
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+
+    <script src="/scripts/contact.js"></script>
+
+</body>
+<footer>
+    &COPY: 2022 by G3 Development
+</footer>
+
+</html>
