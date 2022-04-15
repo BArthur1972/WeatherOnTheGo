@@ -25,6 +25,7 @@ header {
 
 .nav-content {
 	display: flex;
+	list-style: none;
 }
 
 .logo-section {
@@ -72,6 +73,7 @@ li > a {
 .search-bar {
 	margin: 0 10px;
 	display: flex;
+	color: white;
 }
 
 .bar {
@@ -81,7 +83,7 @@ li > a {
 	border: none;
 	border-radius: 15px;
 	color: white;
-	background-color: grey;
+	background-color: rgb(170, 166, 166);
 }
 
 .select {
@@ -168,8 +170,8 @@ main {
 }
 
 .other-details {
-	display: block ruby;
-	padding-top: 17px;
+	display: flex;
+	padding: 17px 20px 0px;
 }
 
 .detail {
@@ -191,10 +193,10 @@ main {
 
 footer {
     background: #111e6c;
-    margin-top: 50px;
     text-align: center;
     padding: 10px;
     color: #fff;
+	margin-top: 35px;
 }
 
 .card-details, .loading {
@@ -249,5 +251,9 @@ footer {
 
 	.select {
 		display: block ruby;
+	}
+
+	header {
+		margin-top: 0;
 	}
 }
