@@ -40,7 +40,7 @@ let weather = {
     // Fetches the weather information from API based on geolocation
     fetchWeatherByGeolocation: function () {
         // Making API call
-        fetch("http://api.openweathermap.org/geo/1.0/reverse?lat="
+        fetch("https://api.openweathermap.org/geo/1.0/reverse?lat="
         + this.coordinates[0]
         + "&lon="
         + this.coordinates[1] + "&appid="
