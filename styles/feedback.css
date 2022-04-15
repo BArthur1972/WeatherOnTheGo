@@ -3,23 +3,26 @@
     font-family: 'Alegreya Sans', sans-serif;
 }
 
-.cards{
+.cards {
     align-content: center;
     align-items: center;
     padding-left: 20px;
     text-align: center;
 }
-h1{
+
+h1 {
     text-align: center;
 }
-.form-app{
-    
+
+.form-app {
+
     width: auto;
     height: auto;
     margin: auto;
     font-family: 'Alegreya Sans', sans-serif;
 
 }
+
 header {
     background: #111e6c;
     height: 70px;
@@ -27,11 +30,13 @@ header {
     padding: 0 8%;
     position: relative;
 }
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .right-nav {
     padding-top: 8px;
 }
@@ -64,6 +69,7 @@ nav {
 .right-nav li a:hover::after {
     width: 100%;
 }
+
 body {
     margin: 0px;
     padding: 0px;

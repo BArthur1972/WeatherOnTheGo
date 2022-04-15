@@ -41,12 +41,12 @@ let weather = {
     fetchWeatherByGeolocation: function () {
         // Making API call
         fetch("https://api.openweathermap.org/geo/1.0/reverse?lat="
-        + this.coordinates[0]
-        + "&lon="
-        + this.coordinates[1] + "&appid="
-        + this.apiKey)
-        .then((response) => response.json())
-        .then((data) => this.fetchWeatherByCity(this.getLocation(data)));     
+            + this.coordinates[0]
+            + "&lon="
+            + this.coordinates[1] + "&appid="
+            + this.apiKey)
+            .then((response) => response.json())
+            .then((data) => this.fetchWeatherByCity(this.getLocation(data)));
     },
 
     // Gets the name of the user's current location
