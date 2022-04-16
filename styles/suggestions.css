@@ -182,7 +182,7 @@ h1:hover{
 
 } */
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:900px){
     .section-01{
         display: flex;
         flex-direction: column;
