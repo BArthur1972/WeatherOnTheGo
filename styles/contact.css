@@ -193,7 +193,7 @@ footer {
     font-family: 'Alegreya Sans', sans-serif !important;
 }
 
-/* Media query for header */
+/* Media query for header section */
 @media only screen and (max-width:768px) {
 
     header .header-content {
@@ -218,7 +218,7 @@ footer {
     }
 
 
-    /* Media query for the body */
+    /* Media query for the body section */
     @media(max-width: 600px) {
 
         .wrapper {
