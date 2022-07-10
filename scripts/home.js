@@ -5,7 +5,7 @@ var unitValue = document.querySelector("#select-unit").value;
 let weather = {
 
     // My API key
-    apiKey: "942dd77fa358eb3439a8212cb16724cd",
+    apiKey: config.API_TOKEN,
 
     // User's location upon opening the webpage.
     coordinates: ["", ""],
